@@ -1,10 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: whitesmoke;
+}
+
+/* Header */
 .container{
     max-width: 100vw;
     height: 100vh;
     background-color: antiquewhite;
+   
 }
 header{
-    width: 100vw;
+    box-sizing: border-box;
+    width: 100%;
     height: 80px;
     display: flex;
     flex-direction: row;
@@ -35,4 +46,21 @@ header{
     padding: 5px;
     display: flex;
     align-items: center;
+}
+
+/* main */
+.img-container img{
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+.img-container{
+    position: relative;
+}
+.img-container span{
+    position: absolute;
+    top:80px;
+    left: 250px;
+    font-size: 46px;
+    color: white;
 }
