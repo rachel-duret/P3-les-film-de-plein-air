@@ -1,3 +1,6 @@
+
+/* font-family: 'Dancing Script', cursive;
+   font-family: 'Roboto Serif', sans-serif; */
 *{
     margin: 0;
     padding: 0;
@@ -63,4 +66,104 @@ header{
     left: 250px;
     font-size: 46px;
     color: white;
+}
+.img-description{
+    background-color: rgba(74, 63, 8, 0.5);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img-description h2{
+    text-align: center;
+    font-family: 'Roboto Serif', sans-serif;
+    font-weight: 700;
+    color: white;
+
+}
+.img-description p{
+    text-align: center;
+    font-size: 18px;
+}
+.btn{
+    width: 150px;
+    height: 50px;
+    margin-top: 30px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.btn:hover{
+    border: 1.5px solid #4a3f08;
+    background-color: #4a3f08;
+    color: white;
+}
+/* Listes du festival */
+.lists-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: whitesmoke;
+    
+}
+.title{
+    font-family:  'Roboto Serif', sans-serif;
+    font-size: 36px;
+   padding: 30px 0;
+   margin: auto;
+}
+.lists{
+    display: flex;
+    justify-content: space-around;
+
+
+}
+.list{
+   width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    text-align: center;
+  
+
+}
+.list img{
+    width: 300px;
+    height: 400px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+/* newsletter */
+.newsletter{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+/* À propos */
+
+article{
+    display: flex;
+}
+.left{
+    width: 50%;
+}
+.left img{
+    width: 100%;
+}
+.right{
+    width: 50%;
+
+}
+
+/* footer */
+
+footer{
+    background-color: #4a3f08;
+    height: 300px;
 }
