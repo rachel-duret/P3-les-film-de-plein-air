@@ -29,6 +29,9 @@ header{
     align-items: center;
     background-color: #DCD29F;
 }
+header .icon{
+    display: none;
+}
 .logo {
     width: 50px;
     height: 50px;
@@ -252,11 +255,167 @@ footer h4{
     justify-content: space-around;
 }
 .fa-brands{
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
 }
 .bottom {
     text-align: center;
     margin: 50px;
     font-size: 12px;
+}
+
+@media only screen and (max-width:768px){
+    header{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    header .icon{
+        display: inline-block;
+        width: 30%;
+        margin: auto;
+       
+    }
+    .logo_container{
+        width: 40%;
+    }
+    .menu{
+        display: none;
+    }
+    .search{
+        border: none;
+        width: 30%;
+        display: none;
+    }
+    .search p{
+        display: none;
+    }
+    .img-container span{
+        left: 30px;
+        top: 30px;
+        font-size: 32px;
+    }
+    .img-description h2{
+        font-weight: 600;
+        line-height: 1.2;
+    }
+    .img-description p{
+        font-size: 16px;
+    }
+    
+    /* Listes du festival */
+    
+    .title{  
+        font-size: 30px;
+    }
+    .lists{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .list{
+       width: 100%;
+       margin-bottom: 20px;
+    
+    }
+    .list img{
+        margin-bottom: 10px;
+    }
+    .list p{
+        font-size: 24px;
+    }
+    
+    /* newsletter */
+    .newsletter{
+        flex-direction: column;
+        height: auto;
+    }
+    .newsletter h3{
+        font-size: 28px;
+        font-weight: 500;
+        margin-top: 20px;
+    }
+    .newsletter input{
+        width: 80%;
+        margin: 10px 20px 20px 20px;
+    }
+    /* À propos */
+    
+    article{
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+    }
+    .left img{
+        width: 100%;
+        padding: 0px;
+        border-radius: 0px;
+        -webkit-box-shadow: 0px 0px 15px 0px #4a3f08; 
+        box-shadow: 0px 0px 15px 0px #4a3f08;
+    
+    }
+    .right{
+        width: 100%;
+        display: flex;
+        flex-direction: column;    
+    }
+    .right h2{
+        font-size: 28px;
+    }
+    .right p{
+        margin:20px 20px 30px 20px;
+        font-size: 20px;
+    }
+    
+    /* footer */
+    
+    footer{
+        background-color: #4a3f08;
+        display: flex;
+        flex-direction: column;
+        color: white;
+     
+    }
+    footer h4{
+        font-size: 32px;
+        margin: 30px;
+        font-family: 'Dancing Script', cursive;
+        
+    }
+    .top{
+        display: flex; 
+        flex-direction: column;
+    }
+    .top .left{
+        width: 100%;
+    }
+    .top .left p{
+        margin: 10px;
+        font-size: 22px;
+    }
+    .top .right{
+        width: 100%;
+    }
+    
+    .icons{
+        display: flex;
+        justify-content: space-around;
+    }
+    .bottom {
+      margin: 30px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 }
