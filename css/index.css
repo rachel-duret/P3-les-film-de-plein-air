@@ -8,6 +8,9 @@
 body{
     background-color: whitesmoke;
 }
+a{
+    text-decoration: none;
+}
 
 /* Header */
 .container{
@@ -39,6 +42,12 @@ header{
 }
 .menu a{
     text-decoration: none;
+    color: black;
+}
+.menu a:hover{
+    background-color: #4a3f08;
+    color: white;
+    padding: 5px;
 }
 
 .search{
@@ -49,6 +58,9 @@ header{
     padding: 5px;
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    font-size: 16px;
+    color: rgb(175, 173, 173);
 }
 
 /* main */
@@ -117,6 +129,7 @@ header{
 .lists{
     display: flex;
     justify-content: space-around;
+    margin-bottom: 30px;
 
 
 }
@@ -127,7 +140,6 @@ header{
     flex-direction: column;
     cursor: pointer;
     text-align: center;
-  
 
 }
 .list img{
@@ -136,14 +148,37 @@ header{
     border-radius: 15px;
     margin-bottom: 30px;
 }
+.list p{
+    font-size: 28px;
+    color: black;
+    
+
+}
 
 /* newsletter */
 .newsletter{
     display: flex;
     width: 100%;
-    height: 50px;
+    height: 80px;
     justify-content: center;
     align-items: center;
+    background-color: #DCD29F;
+    justify-content: space-between;
+}
+.newsletter h3{
+    font-family: 'Roboto Serif', sans-serif; 
+    font-size: 32px;
+    font-weight: 600;
+    margin: auto;
+}
+.newsletter input{
+    width: 60%;
+    height: 30px;
+    padding: 10px 20px;
+    outline: none;
+    border: 1px solid #4a3f08;
+    border-radius: 5px;
+    margin-right: 20px;
 }
 /* À propos */
 
@@ -155,15 +190,73 @@ article{
 }
 .left img{
     width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 15px 0px #4a3f08; 
+    box-shadow: 0px 0px 15px 0px #4a3f08;
+
 }
 .right{
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    
 
+ 
+}
+.right h2{
+    text-align: center;   
+    margin-top: 20px;
+    font-size: 32px;
+}
+.right p{
+    margin:20px 0px 0px 40px;
+    font-size: 22px;
 }
 
 /* footer */
 
 footer{
     background-color: #4a3f08;
-    height: 300px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+ 
+}
+footer h4{
+    font-size: 32px;
+    margin: 30px;
+    font-family: 'Dancing Script', cursive;
+    
+}
+.top{
+    display: flex; 
+}
+.top .left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.top .left p{
+    margin: 10px;
+    font-size: 22px;
+}
+.top .right{
+    width: 50%;
+    text-align: center;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-around;
+}
+.fa-brands{
+    width: 100px;
+    height: 100px;
+}
+.bottom {
+    text-align: center;
+    margin: 50px;
+    font-size: 12px;
 }
