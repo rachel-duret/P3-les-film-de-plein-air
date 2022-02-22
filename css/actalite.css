@@ -7,12 +7,13 @@
 body{
     background-color: whitesmoke;
 }
+a{
+    text-decoration: none;
+}
 
 /* Header */
 .container{
     max-width: 100vw;
-    height: 100vh;
-    background-color: antiquewhite;
    
 }
 header{
@@ -24,6 +25,9 @@ header{
     justify-content: space-around;
     align-items: center;
     background-color: #DCD29F;
+}
+header .icon{
+    display: none;
 }
 .logo {
     width: 50px;
@@ -58,7 +62,15 @@ header{
     font-size: 16px;
     color: rgb(175, 173, 173);
 }
+
 /* main */
+h1{
+    margin: 20px;
+    padding-left: 30px;
+    font-size: 36px;
+    font-weight: 800;
+  
+}
 section .lists{
     display: flex;
 }
@@ -67,10 +79,28 @@ section .img-container{
 }
 section img{
     width: 90%;
+    margin: 20px;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 0px 15px 0px #4a3f08; 
+    box-shadow: 0px 0px 15px 0px #4a3f08;
 }
 section .description{
     width: 50%;
+    margin: 20px;
 }
+section h2{
+    font-size: 32px;
+    font-weight: 600px;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #4a3f08;
+
+}
+
+
+
+
 
 
 /* footer */
@@ -111,11 +141,120 @@ footer h4{
     justify-content: space-around;
 }
 .fa-brands{
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
 }
 .bottom {
     text-align: center;
     margin: 50px;
     font-size: 12px;
+}
+
+@media only screen and (max-width:768px){
+    header{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    header .icon{
+        display: inline-block;
+        width: 30%;
+        margin: auto;
+       
+    }
+    .logo_container{
+        width: 40%;
+    }
+    .menu{
+        display: none;
+    }
+    .search{
+        border: none;
+        width: 30%;
+        display: none;
+    }
+    .search p{
+        display: none;
+    }
+
+    
+/* main */
+h1{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+  
+}
+section .lists{
+    display: flex;
+    flex-direction: column;
+}
+section .img-container{
+    width: 100%;
+}
+
+section .description{
+    width: 90%;
+    margin: 20px;
+}
+section h2{
+    font-size: 32px;
+    font-weight: 600px;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #4a3f08;
+
+}
+    
+   
+    /* footer */
+    
+    footer{
+        background-color: #4a3f08;
+        display: flex;
+        flex-direction: column;
+        color: white;
+     
+    }
+    footer h4{
+        font-size: 32px;
+        margin: 30px;
+        font-family: 'Dancing Script', cursive;
+        
+    }
+    .top{
+        display: flex; 
+        flex-direction: column;
+    }
+    .top .left{
+        width: 100%;
+    }
+    .top .left p{
+        margin: 10px;
+        font-size: 22px;
+    }
+    .top .right{
+        width: 100%;
+    }
+    
+    .icons{
+        display: flex;
+        justify-content: space-around;
+    }
+    .bottom {
+      margin: 30px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 }
